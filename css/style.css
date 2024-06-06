@@ -6,7 +6,12 @@
     box-sizing: border-box;
 }
 body {
-    display: flex;
+    display: grid;
+}
+/*number of rows*/
+body {
+    grid-template-rows: auto minmax(100%, 100dvh) auto;
+
 }
 ::-webkit-scrollbar {
     display: none;
@@ -22,4 +27,10 @@ img {
     aspect-ratio: 1;
     object-fit: cover;
     object-position: center;
+    width: 8%;
+    height: 8%;
+}
+/* text align: center*/
+h2 {
+    text-align: center;
 }
