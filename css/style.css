@@ -1,1 +1,25 @@
-/**/
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+/* navbar */
+.navbar {
+    & img [alt='logo'] {
+        width: 5rem;
+    }
+}
+/* All the images */
+img {
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+}
